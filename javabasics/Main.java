@@ -1,9 +1,12 @@
 package javabasics;
 
+import javabasics.string.StringInspectionMethod;
+
 public class Main {
     public static void main(String args[]) {
-        StudentRecord studentRecord = new StudentRecord(15,"aryan");
-        System.out.print(studentRecord.age());
-
+        StringInspectionMethod stringInspectionMethod = new StringInspectionMethod();
+        stringInspectionMethod.runAllInspectionMethods("Aryan");
+        stringInspectionMethod.runAllInspectionMethods("");
+        stringInspectionMethod.runAllInspectionMethods("    ");
     }
 }
