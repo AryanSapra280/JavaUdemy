@@ -1,6 +1,7 @@
 package sections;
 
 import sections.section3.BarkingDog;
+import sections.section3.DecimalComparator;
 import sections.section3.LeapYear;
 import sections.section3.MegaBytesConverter;
 
@@ -30,5 +31,12 @@ public class Main {
         System.out.println(leapYear.isLeapYear(1211));
         System.out.println(leapYear.isLeapYear(10000));
         System.out.println("Exercise 5 ended");
+
+        System.out.println("Exercise 6 started");
+        DecimalComparator decimalComparator = new DecimalComparator();
+        System.out.println(decimalComparator.areEqualByThreeDecimalPlaces(3.175,3.176));
+        System.out.println(decimalComparator.areEqualByThreeDecimalPlaces(-3.1757,-3.175));
+        System.out.println(decimalComparator.areEqualByThreeDecimalPlaces(3.175,3.175));
+        System.out.println("Exercise 6 ended");
     }
 }
