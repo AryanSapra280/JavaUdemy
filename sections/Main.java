@@ -1,9 +1,8 @@
 package sections;
 
-import sections.section3.BarkingDog;
-import sections.section3.DecimalComparator;
-import sections.section3.LeapYear;
-import sections.section3.MegaBytesConverter;
+import sections.section3.*;
+
+import java.awt.geom.Area;
 
 public class Main {
 
@@ -38,5 +37,10 @@ public class Main {
         System.out.println(decimalComparator.areEqualByThreeDecimalPlaces(-3.1757,-3.175));
         System.out.println(decimalComparator.areEqualByThreeDecimalPlaces(3.175,3.175));
         System.out.println("Exercise 6 ended");
+
+        System.out.println("Exercise 9 started");
+        System.out.println("Circle area = " + AreaCalculator.area(20.75));
+        System.out.println("Rectangle area = " + AreaCalculator.area(4.0,2.0));
+        System.out.println("Exercise 9 ended");
     }
 }
